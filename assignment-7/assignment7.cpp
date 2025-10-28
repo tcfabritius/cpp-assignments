@@ -22,4 +22,3 @@ double laske_litrat(int gallonat) {
 	double litrat = gallonat * 3.785;
 	return litrat;
 }
-
