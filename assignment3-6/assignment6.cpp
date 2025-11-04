@@ -6,7 +6,7 @@ int main() {
 	int pituus = 0;
 	while (*osoitin) {
 		pituus++;
-		*osoitin++;
+		osoitin++;
 	}
 	std::cout << pituus;
 	return 0;
