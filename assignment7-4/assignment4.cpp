@@ -43,7 +43,7 @@ int main() {
 	srand(time(0));
 	Car autot[10];
 	for (int i = 0; i < 10; i++) {
-		autot[i] = Car("ABC-" + to_string(i), rand() % 200 + 100);
+		autot[i].Car::Car("ABC-" + to_string(i), rand() % 200 + 100);
 	}
 	while (true) {
 		for (int i = 0; i < 10; i++) {
