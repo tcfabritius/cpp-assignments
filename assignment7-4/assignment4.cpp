@@ -27,19 +27,20 @@ public:
 			_nopeus = 0;
 		}
 	}
-	int get_kuljettu() {
+	int get_kuljettu() const {
 		return _kuljettu;
 	}
 	void kulje(int tunnit) {
 		_kuljettu += _nopeus * tunnit;
 	}
-	void tulosta_tiedot() {
+	void tulosta_tiedot() const {
 		cout << "Rekisterinumero: " << _rekisterinumero << ", Huippunopeus: " << _huippunopeus
 			<< ", Nopeus: " << _nopeus << ", Kuljettu matka: " << _kuljettu << endl;
 	}
 };
 
 int main() {
+	srand(time(0));
 	Car autot[10];
 	for (int i = 0; i < 10; i++) {
 		autot[i] = Car("ABC-" + to_string(i), rand() % 200 + 100);
