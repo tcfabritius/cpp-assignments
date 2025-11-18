@@ -27,8 +27,8 @@ int main() {
 	return 0;
 }
 
-void print_car_info(Car* car) {
-	car->print_info();
+void print_car_info(Car& car) {
+	car.print_info();
 }
 
 
